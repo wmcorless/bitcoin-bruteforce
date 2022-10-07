@@ -4,7 +4,7 @@ from requests import get
 from time import sleep
 
 with open('wallets.txt', 'r') as file:
-    wallets = file.read()
+    wallets = set(file.read()[:-2].split('\n'))
 
 max_p = 115792089237316195423570985008687907852837564279074904382605163141518161494336
 
