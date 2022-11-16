@@ -9,8 +9,6 @@ Bitcoin public address brute force written in Python with simplicity and speed i
 - Print generation output
 
 ### Upcoming features
-- GPU optimization (NVIDIA only)
-- Cython optimization
 - Automatic payout system
 - Save bruteforce progress
 - Create wallet database
