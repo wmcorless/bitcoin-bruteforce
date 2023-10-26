@@ -20,29 +20,33 @@ Bitcoin public address brute force written in Python with simplicity and speed i
 
 ### Debian install
 1. Install [Python](https://www.python.org/downloads/)
+   or
+```bash
+apt install python3-pip
+```
 2. Install git and clone this repo:
 
 ```bash
-$ sudo apt update -y && sudo apt upgrade -y
-$ sudo apt install git -y
-$ git clone https://github.com/meesvw/bitcoin-bruteforce.git
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install git -y
+git clone https://github.com/meesvw/bitcoin-bruteforce.git
 ```
 
 3. Go into the bitcoin-bruteforce folder and install the requirements:
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 4. Add wallets in the [wallets.txt](wallets.txt) file:
 ```bash
-$ sudo nano wallets.txt
+sudo nano wallets.txt
 ```
 
 5. Run the code:
 
 ```bash
-$ python3 bruteforce.py
+python3 bruteforce.py
 ```
 
 #### Keep the code running when closing SSH session (Optional):
@@ -54,7 +58,7 @@ sudo apt install -y screen
 
 After that just start the Python program (exit this session by pressing `ctrl` + `a` + `d`):
 ```bash
-sudo screen python bruteforce.py
+sudo screen python3 bruteforce.py
 ```
 
 If you want to connect to your last session just use:
